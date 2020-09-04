@@ -163,7 +163,7 @@ service通过k8s集群节点上的kube-proxy实现，支持3种代理模式： `
 
 1. iptables proxy mode
 
-      ![iptable-proxy-mode](001_service_intro\services-iptables-overview.svg)
+      ![iptable-proxy-mode](001_service_intro/services-iptables-overview.svg)
 
    * kube-proxy为每一个service创建/维护一条路由转发规则。通过路由转发规则将访问service ip和端口的流量转发至对应后端pod IP。
 
@@ -195,7 +195,7 @@ service通过k8s集群节点上的kube-proxy实现，支持3种代理模式： `
 
 2. IPVS proxy mode
 
-   ![ipvs-proxy-mode](001_service_intro\services-ipvs-overview.svg)
+   ![ipvs-proxy-mode](001_service_intro/services-ipvs-overview.svg)
 
    * kube-proxy调用`netlink`接口为每一个service创建/维护IPVS规则。IPVS负责流量转发
 
