@@ -1,6 +1,6 @@
 # Static Pod - 静态Pod
 
-1. 静态Pod` （`Static Pod`）是被`kubelet`直接管理的Pod类型，`kubelet`作为`静态Pod`的守护进程，负责监控其状态
+1. 静态Pod (`Static Pod`)是被`kubelet`直接管理的Pod类型，`kubelet`作为`静态Pod`的守护进程，负责监控其状态
 
 2. `kubelet`创建`静态Pod`同时，会为每个`静态Pod`尝试向`API server`请求创建一个`mirror Pod`，这样通过`API server`就可以看到该Pod的状态。
 
