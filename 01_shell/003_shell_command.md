@@ -71,8 +71,8 @@ yum install net-tools
 
 9 `kubectl`
 
-#find mapping nodes-pvc-pv
-kubectl get pvc -o go-template --template='{{range .items}}{{index .metadata.annotations "volume.kubernetes.io/selected-node"}} {{"-"}} {{index .metadata.name}} {{" - "}} {{index .spec.volumeName}}  {{"\n"}}{{end}}'
+#find mapping nodes-pvc-pv  
+kubectl get pvc -o go-template --template=\'{{range .items}}{{index .metadata.annotations "volume.kubernetes.io/selected-node"}} {{"-"}} {{index .metadata.name}} {{" - "}} {{index .spec.volumeName}}  {{"\n"}}{{end}}\'
 
 ```
 #get pods uid and name mapping
